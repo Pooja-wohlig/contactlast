@@ -3,7 +3,6 @@ class Json extends CI_Controller
 {
 	public function insertsubmit()
     {
-		
 		$website=$this->input->get_post('website');
 		$websiteall=$this->website_model->select($website);
 		$myreq=$_SERVER;
@@ -29,13 +28,12 @@ class Json extends CI_Controller
 			}
 		}
 		else
-			
 		{
 			$data["message"]="You are not allowed";
 		}
 		$this->load->view('json',$data);   
 	}    
-	
+	  
 	public function getserver()
     {
 		

@@ -1,4 +1,3 @@
-
 <?php
 if ( !defined( 'BASEPATH' ) )
 	exit( 'No direct script access allowed' );
@@ -36,7 +35,6 @@ class website_model extends CI_Model
         $data=$this->db->query("DELETE FROM `website` WHERE `id`='$id'");
          return $data;
     }
-  
     function update($id,$name,$status,$json,$email,$ip,$website)
    {
      $query=$this->db->query(" UPDATE `website` SET  `name`='$name',`status`='$status',`json`='$json',`email`='$email',`ip`='$ip',`website`='$website' WHERE `id`='$id' "); 
